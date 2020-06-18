@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface InstaTwitViewController : UIViewController < UIPickerViewDataSource, UIPickerViewDelegate >
-
+{
+    struct CPPMembers *_cppMembers;
+}
 @property (weak, nonatomic) IBOutlet UIPickerView *tweetPicker;
 @property (weak, nonatomic) IBOutlet UITextField *notesField;
 

@@ -7,8 +7,13 @@
 //
 
 #import "InstaTwitViewController.h"
-
 #import <Social/Social.h>
+#import "Tutorial.hpp"
+
+struct CPPMembers
+{
+    CPPClass member1;
+};
 
 @interface InstaTwitViewController ()
 
@@ -26,6 +31,7 @@
                         @"working", @"meeting", @"pitching", @"pivoting", @"going mobile"];
     self.feelings = @[@"awesome", @"confident", @"smart", @"agile", @"friendly",
                       @"savvy", @"psyched", @"hopeful", @"efficient"];
+    
 }
 
 #pragma mark -
@@ -36,14 +42,18 @@
 }
 
 - (IBAction)tweetButtonTapped:(id)sender {
+    _cppMembers = new CPPMembers;
     NSString *message = [NSString stringWithFormat:@"%@ I'm %@ and feeling %@ about it.",
                          self.notesField.text ? self.notesField.text : @"",
                          self.activities[[self.tweetPicker selectedRowInComponent:0]],
                          self.feelings[[self.tweetPicker selectedRowInComponent:1]]];
-    NSLog(@"%@", message);
+    NSString *msg = [NSString stringWithFormat:@"%s", _cppMembers->member1.getNumber().c_str()];
     
+    //NSLog(@"%@", message);
+    NSLog(@"%s", msg);
+   // printf("Using C++\n");
     SLComposeViewController *composeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-    [composeViewController setInitialText:message];
+    [composeViewController setInitialText:msg];
     [self presentViewController:composeViewController animated:YES completion:nil];
 }
 
@@ -78,9 +88,19 @@
 #pragma mark -
 #pragma mark Memory Management
 
+- (void)dealloc
+{
+    //Free members even if ARC.
+    delete _cppMembers;
+    
+    //If not ARC uncomment the following line
+    //[super dealloc];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 @end
+//--------------------------------------------------------The C++ implementation
+
