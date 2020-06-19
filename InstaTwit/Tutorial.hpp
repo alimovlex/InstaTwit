@@ -23,4 +23,6 @@ class CPPClass
 public:
     string getNumber();
 };
+
+
 #endif /* Tutorial_hpp */
