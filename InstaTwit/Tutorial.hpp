@@ -12,8 +12,10 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include <cstring>
 #include <vector>
 #include <algorithm>
+#include <ctime>
 
 using namespace std;
 class CPPClass
