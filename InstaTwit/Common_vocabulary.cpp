@@ -1,0 +1,117 @@
+//
+//  Tutorial.cpp
+//  InstaTwit
+//
+//  Created by alimovlex on 12/06/2020.
+//  Copyright © 2020 Element 84, LLC. All rights reserved.
+//
+
+#include "Common_vocabulary.hpp"
+
+using namespace std;
+
+string CPPClass::common_first()
+{
+    string a;
+    vector<string> personal_qualities {"restive", "impertinent", "egregious", "veracious", "mercurial",
+                             "amenable", "gregarious", "parochial", "ingenious", "artful",
+                             "involved", "disinterested", "frugal", "parsimonious", "iconoclast"
+    };
+    vector<string> thoughts {"ambiguous", "laconic", "vindicated", "equivocal", "anomalous",
+                             "innocuous", "amorphous"
+    };
+    vector<string> objects {"amalgam", "harangue", "aberration", "venality", "calumny", "acrimony"};
+    vector<string> actions {"to venerate", "to betray", "to galvanize", "to demur", "to maintain",
+                        "to enervate", "to intimate", "to undermine", "to vindicate", "to belie",
+                        "to prevaricate", "to profligate", "to censure", "to upbraid", "to chastise",
+                        "to castigate"
+    };
+    vector<string> :: iterator itr;
+    vector<string> :: iterator jtr;
+    vector<string> :: iterator ktr;
+    vector<string> :: iterator ltr;
+    srand((unsigned) time(NULL));
+    random_shuffle(personal_qualities.begin(), personal_qualities.end());
+    random_shuffle(thoughts.begin(), thoughts.end());
+    random_shuffle(objects.begin(), objects.end());
+    random_shuffle(actions.begin(), actions.end());
+    for (itr = thoughts.begin(); itr != thoughts.end(); itr++)
+    {
+    for(jtr = personal_qualities.begin();jtr!=personal_qualities.end(); jtr++)
+    for(ktr = objects.begin();ktr!=objects.end(); ktr++)
+    for(ltr = actions.begin();ltr!=actions.end(); ltr++)
+        a ="I adore "+*ltr+ " as I'm "+*jtr+ " person and have " + *itr + " thoughts and ideas about "+*ktr+ ".";
+    }
+    
+    return a;
+}
+
+string CPPClass::common_second()
+{
+    string a;
+    vector<string> personal_qualities {"rustic", "impudent", "apathetic", "frivolous", "reticent",
+                                    "dogmatic", "dictatorial", "didactic", "decorous", "audacious",
+                                    "meticulous", "inexorable", "diffident", "deferential", "fortuitous",
+                                    "entrenched", "aesthetic"
+    };
+    vector<string> thoughts {"vociferous", "banal", "superfluous", "germane", "bucolic",
+                             "recondite", "mawkish", "obscure", "incisive", "cryptic",
+                             "conspicuous"
+    };
+    vector<string> objects {"perfidy", "volubility", "aesthetics", "chortle", "gall",
+                            "torpor", "predilection", "glut", "prescience", "culpability"
+    };
+    vector<string> actions {"to eschew", "to mitigate", "to engender", "to preclude", "to culminate",
+                            "to concede", "to gainsay", "to exacerbate", "to lambast"
+    };
+    vector<string> :: iterator itr;
+    vector<string> :: iterator jtr;
+    vector<string> :: iterator ktr;
+    vector<string> :: iterator ltr;
+    srand((unsigned) time(NULL));
+    random_shuffle(personal_qualities.begin(), personal_qualities.end());
+    random_shuffle(thoughts.begin(), thoughts.end());
+    random_shuffle(objects.begin(), objects.end());
+    random_shuffle(actions.begin(), actions.end());
+    for (itr = thoughts.begin(); itr != thoughts.end(); itr++)
+    {
+        for(jtr = personal_qualities.begin();jtr!=personal_qualities.end(); jtr++)
+            for(ktr = objects.begin();ktr!=objects.end(); ktr++)
+                for(ltr = actions.begin();ltr!=actions.end(); ltr++)
+                    a ="I adore "+*ltr+ " as I'm "+*jtr+ " person and have " + *itr + " thoughts and ideas about "+*ktr+ ".";
+    }
+    
+    return a;
+}
+
+string CPPClass::common_third()
+{
+    string a;
+    vector<string> personal_qualities {
+        
+    };
+    vector<string> thoughts {
+    };
+    vector<string> objects {
+    };
+    vector<string> actions {
+    };
+    vector<string> :: iterator itr;
+    vector<string> :: iterator jtr;
+    vector<string> :: iterator ktr;
+    vector<string> :: iterator ltr;
+    srand((unsigned) time(NULL));
+    random_shuffle(personal_qualities.begin(), personal_qualities.end());
+    random_shuffle(thoughts.begin(), thoughts.end());
+    random_shuffle(objects.begin(), objects.end());
+    random_shuffle(actions.begin(), actions.end());
+    for (itr = thoughts.begin(); itr != thoughts.end(); itr++)
+    {
+        for(jtr = personal_qualities.begin();jtr!=personal_qualities.end(); jtr++)
+            for(ktr = objects.begin();ktr!=objects.end(); ktr++)
+                for(ltr = actions.begin();ltr!=actions.end(); ltr++)
+                    a ="I adore "+*ltr+ " as I'm "+*jtr+ " person and have " + *itr + " thoughts and ideas about "+*ktr+ ".";
+    }
+    
+    return a;
+}

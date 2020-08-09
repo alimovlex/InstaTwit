@@ -22,7 +22,9 @@
 		DA87D053170F6534007D4CE9 /* InstaTwitTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA87D052170F6534007D4CE9 /* InstaTwitTests.mm */; };
 		DA87D05D170F685F007D4CE9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87D05C170F685F007D4CE9 /* Social.framework */; };
 		DAC56DDB180C944C00979110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC56DDA180C944C00979110 /* Images.xcassets */; };
-		E2AF0E432493FD7A00886403 /* Tutorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2AF0E412493FD7A00886403 /* Tutorial.cpp */; };
+		E277D6BF24E061600099703B /* Basic_vocabulary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E277D6BD24E061600099703B /* Basic_vocabulary.cpp */; };
+		E277D6C224E061B00099703B /* Advanced_vocabulary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E277D6C024E061B00099703B /* Advanced_vocabulary.cpp */; };
+		E2AF0E432493FD7A00886403 /* Common_vocabulary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2AF0E412493FD7A00886403 /* Common_vocabulary.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +59,12 @@
 		DA87D052170F6534007D4CE9 /* InstaTwitTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = InstaTwitTests.mm; sourceTree = "<group>"; };
 		DA87D05C170F685F007D4CE9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		DAC56DDA180C944C00979110 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E2AF0E412493FD7A00886403 /* Tutorial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tutorial.cpp; sourceTree = "<group>"; };
-		E2AF0E422493FD7A00886403 /* Tutorial.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tutorial.hpp; sourceTree = "<group>"; };
+		E277D6BD24E061600099703B /* Basic_vocabulary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Basic_vocabulary.cpp; sourceTree = "<group>"; };
+		E277D6BE24E061600099703B /* Basic_vocabulary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Basic_vocabulary.hpp; sourceTree = "<group>"; };
+		E277D6C024E061B00099703B /* Advanced_vocabulary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Advanced_vocabulary.cpp; sourceTree = "<group>"; };
+		E277D6C124E061B00099703B /* Advanced_vocabulary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Advanced_vocabulary.hpp; sourceTree = "<group>"; };
+		E2AF0E412493FD7A00886403 /* Common_vocabulary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Common_vocabulary.cpp; sourceTree = "<group>"; };
+		E2AF0E422493FD7A00886403 /* Common_vocabulary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Common_vocabulary.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +126,12 @@
 		DA87D027170F6534007D4CE9 /* InstaTwit */ = {
 			isa = PBXGroup;
 			children = (
-				E2AF0E412493FD7A00886403 /* Tutorial.cpp */,
-				E2AF0E422493FD7A00886403 /* Tutorial.hpp */,
+				E277D6C024E061B00099703B /* Advanced_vocabulary.cpp */,
+				E277D6C124E061B00099703B /* Advanced_vocabulary.hpp */,
+				E277D6BD24E061600099703B /* Basic_vocabulary.cpp */,
+				E277D6BE24E061600099703B /* Basic_vocabulary.hpp */,
+				E2AF0E412493FD7A00886403 /* Common_vocabulary.cpp */,
+				E2AF0E422493FD7A00886403 /* Common_vocabulary.hpp */,
 				DA87D030170F6534007D4CE9 /* AppDelegate.h */,
 				DA87D031170F6534007D4CE9 /* AppDelegate.mm */,
 				DA87D039170F6534007D4CE9 /* Main.storyboard */,
@@ -277,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA87D02E170F6534007D4CE9 /* main.mm in Sources */,
-				E2AF0E432493FD7A00886403 /* Tutorial.cpp in Sources */,
+				E2AF0E432493FD7A00886403 /* Common_vocabulary.cpp in Sources */,
 				DA87D032170F6534007D4CE9 /* AppDelegate.mm in Sources */,
+				E277D6C224E061B00099703B /* Advanced_vocabulary.cpp in Sources */,
+				E277D6BF24E061600099703B /* Basic_vocabulary.cpp in Sources */,
 				DA87D03E170F6534007D4CE9 /* InstaTwitViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

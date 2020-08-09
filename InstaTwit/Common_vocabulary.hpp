@@ -21,7 +21,12 @@ using namespace std;
 class CPPClass
 {
 public:
-    string getNumber();
+    string common_first();
+    string common_second();
+    string common_third();
+    string common_fourth();
+    string common_fifth();
+    string common_sixth();
 };
 
 

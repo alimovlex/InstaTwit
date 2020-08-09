@@ -8,11 +8,15 @@
 
 #import "InstaTwitViewController.h"
 #import <Social/Social.h>
-#import "Tutorial.hpp"
+#import "Common_vocabulary.hpp"
+#import "Basic_vocabulary.hpp"
+#import "Advanced_vocabulary.hpp"
 
 struct CPPMembers
 {
     CPPClass member1;
+    CXXClass member2;
+    CPP_Class member3;
 };
 
 @interface InstaTwitViewController ()
@@ -47,7 +51,7 @@ struct CPPMembers
                          self.notesField.text ? self.notesField.text : @"",
                          self.activities[[self.tweetPicker selectedRowInComponent:0]],
                          self.feelings[[self.tweetPicker selectedRowInComponent:1]]];*/
-    NSString *msg = [NSString stringWithFormat:@"%s", _cppMembers->member1.getNumber().c_str()];
+    NSString *msg = [NSString stringWithFormat:@"%s", _cppMembers->member1.common_first().c_str()];
     
     //NSLog(@"%@", message);
     NSLog(@"%s", msg);
