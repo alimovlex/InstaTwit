@@ -26,12 +26,12 @@ struct CPPMembers
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    /*
     self.activities = @[@"networking", @"coding", @"tweeting", @"wireframing",
                         @"working", @"meeting", @"pitching", @"pivoting", @"going mobile"];
     self.feelings = @[@"awesome", @"confident", @"smart", @"agile", @"friendly",
                       @"savvy", @"psyched", @"hopeful", @"efficient"];
-    
+    */
 }
 
 #pragma mark -
@@ -43,10 +43,10 @@ struct CPPMembers
 
 - (IBAction)tweetButtonTapped:(id)sender {
     _cppMembers = new CPPMembers;
-    NSString *message = [NSString stringWithFormat:@"%@ I'm %@ and feeling %@ about it.",
+    /*NSString *message = [NSString stringWithFormat:@"%@ I'm %@ and feeling %@ about it.",
                          self.notesField.text ? self.notesField.text : @"",
                          self.activities[[self.tweetPicker selectedRowInComponent:0]],
-                         self.feelings[[self.tweetPicker selectedRowInComponent:1]]];
+                         self.feelings[[self.tweetPicker selectedRowInComponent:1]]];*/
     NSString *msg = [NSString stringWithFormat:@"%s", _cppMembers->member1.getNumber().c_str()];
     
     //NSLog(@"%@", message);

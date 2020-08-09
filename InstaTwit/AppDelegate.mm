@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  InstaTwit
 //
-//  Created by Paul Pilone on 4/5/13.
-//  Copyright (c) 2013 Element 84, LLC. All rights reserved.
+//  Created by Aleksei Alimov on 8/8/2020.
+//  Copyright (c) 2020 LexiCOM, LLC. All rights reserved.
 //
 
 #import "AppDelegate.h"
