@@ -15,17 +15,14 @@ string CPPClass::common_first()
     string a;
     vector<string> personal_qualities {"restive", "impertinent", "egregious", "veracious", "mercurial",
                              "amenable", "gregarious", "parochial", "ingenious", "artful",
-                             "involved", "disinterested", "frugal", "parsimonious", "iconoclast"
-    };
+                             "involved", "disinterested", "frugal", "parsimonious", "iconoclast"};
     vector<string> thoughts {"ambiguous", "laconic", "vindicated", "equivocal", "anomalous",
-                             "innocuous", "amorphous"
-    };
+                             "innocuous", "amorphous"};
     vector<string> objects {"amalgam", "harangue", "aberration", "venality", "calumny", "acrimony"};
     vector<string> actions {"to venerate", "to betray", "to galvanize", "to demur", "to maintain",
                         "to enervate", "to intimate", "to undermine", "to vindicate", "to belie",
                         "to prevaricate", "to profligate", "to censure", "to upbraid", "to chastise",
-                        "to castigate"
-    };
+                        "to castigate"};
     vector<string> :: iterator itr;
     vector<string> :: iterator jtr;
     vector<string> :: iterator ktr;
@@ -52,18 +49,14 @@ string CPPClass::common_second()
     vector<string> personal_qualities {"rustic", "impudent", "apathetic", "frivolous", "reticent",
                                     "dogmatic", "dictatorial", "didactic", "decorous", "audacious",
                                     "meticulous", "inexorable", "diffident", "deferential", "fortuitous",
-                                    "entrenched", "aesthetic"
-    };
+                                    "entrenched", "aesthetic"};
     vector<string> thoughts {"vociferous", "banal", "superfluous", "germane", "bucolic",
                              "recondite", "mawkish", "obscure", "incisive", "cryptic",
-                             "conspicuous"
-    };
+                             "conspicuous"};
     vector<string> objects {"perfidy", "volubility", "aesthetics", "chortle", "gall",
-                            "torpor", "predilection", "glut", "prescience", "culpability"
-    };
+                            "torpor", "predilection", "glut", "prescience", "culpability"};
     vector<string> actions {"to eschew", "to mitigate", "to engender", "to preclude", "to culminate",
-                            "to concede", "to gainsay", "to exacerbate", "to lambast"
-    };
+                            "to concede", "to gainsay", "to exacerbate", "to lambast"};
     vector<string> :: iterator itr;
     vector<string> :: iterator jtr;
     vector<string> :: iterator ktr;
@@ -87,15 +80,17 @@ string CPPClass::common_second()
 string CPPClass::common_third()
 {
     string a;
-    vector<string> personal_qualities {
-        
-    };
-    vector<string> thoughts {
-    };
-    vector<string> objects {
-    };
-    vector<string> actions {
-    };
+    vector<string> personal_qualities {"ascetic", "avaricious", "belligerent", "disaffected", "eminent",
+                                       "forlorn", "guileless", "haughty", "itinerant", "magnanimous",
+                                    "precocious", "refractory", "tenacious", "treacherous", "insidious",
+                                    "languid", "heretic"};
+    vector<string> thoughts {"elucidated", "fallacious", "spurious", "unequivocal", "eclectic",
+                             "immutable", "negligible", "quotidian"};
+    vector<string> objects {"tantamount", "apathy", "incongruity", "jingoism", "jubilant",
+                            "travesty", "guile", "panache", "vehemence", "rudiments"};
+    vector<string> actions {"to abstain", "to circumvent", "to frustrate", "to juxtapose", "to mollify",
+                            "to vilify", "to ameliorate", "to contrive", "to delineate", "to derive",
+                            "to elucidate", "to staunch", "to subsume", "to supplant", "to denote"};
     vector<string> :: iterator itr;
     vector<string> :: iterator jtr;
     vector<string> :: iterator ktr;
