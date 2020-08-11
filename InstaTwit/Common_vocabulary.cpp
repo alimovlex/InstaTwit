@@ -185,8 +185,7 @@ string CPPClass::common_sixth()
                                        "dispassionate", "jovial", "capricious", "impartial", "erudite",
                             "sullen", "efficacious", "stringent", "furtive", "indecorous", "dilatory"};
     vector<string> thoughts {"edifying", "esoteric", "nonplussed", "specious", "arduous",
-                             "deleterious", "flux", "ignominious", "mundane", "transient",
-    };
+                             "deleterious", "flux", "ignominious", "mundane", "transient"};
     vector<string> objects {"contrition", "polemic", "mendacity", "duress", "nuance",
                             "opulence", "anomaly", "banality"};
     vector<string> actions {"to bolster", "to placate", "to posit", "to disseminate", "to elicit",
