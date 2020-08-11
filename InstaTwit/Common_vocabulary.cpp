@@ -176,3 +176,37 @@ string CPPClass::common_fifth()
     
     return a;
 }
+
+string CPPClass::common_sixth()
+{
+    string a;
+    vector<string> personal_qualities {"clumsy", "craven", "harried", "maladroit", "maverick",
+                                       "fastidious", "timorous", "pejorative", "imprudent", "economical",
+                                       "dispassionate", "jovial", "capricious", "impartial", "erudite",
+                            "sullen", "efficacious", "stringent", "furtive", "indecorous", "dilatory"};
+    vector<string> thoughts {"edifying", "esoteric", "nonplussed", "specious", "arduous",
+                             "deleterious", "flux", "ignominious", "mundane", "transient",
+    };
+    vector<string> objects {"contrition", "polemic", "mendacity", "duress", "nuance",
+                            "opulence", "anomaly", "banality"};
+    vector<string> actions {"to bolster", "to placate", "to posit", "to disseminate", "to elicit",
+                            "to rebuke", "to reproach", "to truncate"};
+    vector<string> :: iterator itr;
+    vector<string> :: iterator jtr;
+    vector<string> :: iterator ktr;
+    vector<string> :: iterator ltr;
+    srand((unsigned) time(NULL));
+    random_shuffle(personal_qualities.begin(), personal_qualities.end());
+    random_shuffle(thoughts.begin(), thoughts.end());
+    random_shuffle(objects.begin(), objects.end());
+    random_shuffle(actions.begin(), actions.end());
+    for (itr = thoughts.begin(); itr != thoughts.end(); itr++)
+    {
+        for(jtr = personal_qualities.begin();jtr!=personal_qualities.end(); jtr++)
+            for(ktr = objects.begin();ktr!=objects.end(); ktr++)
+                for(ltr = actions.begin();ltr!=actions.end(); ltr++)
+                    a ="I adore "+*ltr+ " as I'm "+*jtr+ " person and have " + *itr + " thoughts and ideas about "+*ktr+ ".";
+    }
+    
+    return a;
+}
