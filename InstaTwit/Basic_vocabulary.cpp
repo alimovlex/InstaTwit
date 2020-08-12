@@ -13,10 +13,17 @@ using namespace std;
 string CPP_Class::basic_first()
 {
     string a;
-    vector<string> personal_qualities {};
-    vector<string> thoughts {};
-    vector<string> objects {};
-    vector<string> actions {};
+    vector<string> personal_qualities {"insolvent", "thrifty", "spendthrift", "affluent", "indignant",
+                                       "embroiled", "demure", "voracious", "affable", "vindictive",
+                                       "dog", "amiable", "candid", "tender", "miser", "retiring",
+                                       "inflammatory", "telling", "erratic", "diabolical", "indigenous",
+                                       "telltale", "thoroughgoing", "reprobate"};
+    vector<string> thoughts {"macabre", "bleak"};
+    vector<string> objects {"stipend", "censors", "acme", "slapdash", "summit",
+                            "pinnacle", "variance", "zenith", "tirade", "serendipity", "dupe"};
+    vector<string> actions {"to profuse", "to underwrite", "to indict", "to inundate", "to remiss",
+                            "to peruse", "to err", "to mesmerize", "to hound", "to reprobate",
+                            "to dupe", "to pine", "to unnerve", "to demean"};
     vector<string> :: iterator itr;
     vector<string> :: iterator jtr;
     vector<string> :: iterator ktr;
