@@ -6,8 +6,8 @@
 //  Copyright © 2020 Element 84, LLC. All rights reserved.
 //
 
-#ifndef Tutorial_hpp
-#define Tutorial_hpp
+#ifndef common_vocabulary_hpp
+#define common_vocabulary_hpp
 #include <cstdio>
 #include <cstdlib>
 #include <iostream>

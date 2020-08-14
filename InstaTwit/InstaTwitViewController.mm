@@ -8,9 +8,10 @@
 
 #import "InstaTwitViewController.h"
 #import <Social/Social.h>
-#import "Common_vocabulary.hpp"
-#import "Basic_vocabulary.hpp"
-#import "Advanced_vocabulary.hpp"
+#import "common_vocabulary.hpp"
+#import "basic_vocabulary.hpp"
+#import "advanced_vocabulary.hpp"
+#import "extensions.hpp"
 
 struct CPPMembers
 {

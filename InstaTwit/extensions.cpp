@@ -1,22 +1,16 @@
 //
-//  Advanced_vocabulary.cpp
+//  extensions.cpp
 //  InstaTwit
 //
-//  Created by robot on 09/08/2020.
+//  Created by robot on 14/08/2020.
 //  Copyright © 2020 Element 84, LLC. All rights reserved.
 //
 
-#include "Advanced_vocabulary.hpp"
+#include "extensions.hpp"
 
-using namespace std;
-
-string CXXClass::advanced_first()
+string sentence_shuffle(vector<string> &personal_qualities, vector<string> &thoughts, vector<string> &objects, vector<string> &actions)
 {
-    string a;
-    vector<string> personal_qualities {};
-    vector<string> thoughts {};
-    vector<string> objects {};
-    vector<string> actions {};
+    string speech;
     vector<string> :: iterator itr;
     vector<string> :: iterator jtr;
     vector<string> :: iterator ktr;
@@ -31,8 +25,7 @@ string CXXClass::advanced_first()
         for(jtr = personal_qualities.begin();jtr!=personal_qualities.end(); jtr++)
             for(ktr = objects.begin();ktr!=objects.end(); ktr++)
                 for(ltr = actions.begin();ltr!=actions.end(); ltr++)
-                    a ="I adore "+*ltr+ " as I'm "+*jtr+ " person and have " + *itr + " thoughts and ideas about "+*ktr+ ".";
+                    speech ="I adore "+*ltr+ " as I'm "+*jtr+ " person and have " + *itr + " thoughts and ideas about "+*ktr+ ".";
     }
-    
-    return a;
+    return speech;
 }
