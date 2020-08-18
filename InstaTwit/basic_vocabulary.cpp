@@ -106,3 +106,34 @@ string CPP_Class::basic_fifth()
     return sentence;
 }
 
+string CPP_Class::basic_sixth()
+{
+    string sentence;
+    vector<string> personal_qualities {"docile", "eccentic", "foolhardy", "rakish", "forthright",
+                                       "presumptous", "cavalier", "industrious", "cerebral", "piquant",
+                                       "irascible", "precarious", "uncanny", "lethargic", "incumbent"};
+    vector<string> thoughts {"humdrum", "wanton", "cohesive", "analogous", "insipid",
+                             "intermittent", "evenhanded"};
+    vector<string> objects {"redress", "profusion", "veneer", "conundrum", "clemency",
+                            "melancholy", "tribulation"};
+    vector<string> actions {"to redress", "to coalesce", "to emulate", "to delegate", "to preempt",
+                            "to implicate", "to concentrate", "to behoove", "to buttress", "to antedate",
+                            "to glean", "to ascribe", "to deride", "to besmirch", "to incense",
+                            "to fawn", "to rile", "to finagle", "to begrudge", "to belittle"};
+    sentence=sentence_shuffle(personal_qualities, thoughts, objects, actions);
+    
+    return sentence;
+}
+
+string CPP_Class::basic_seventh()
+{
+    string sentence;
+    vector<string> personal_qualities {};
+    vector<string> thoughts {};
+    vector<string> objects {};
+    vector<string> actions {};
+    sentence=sentence_shuffle(personal_qualities, thoughts, objects, actions);
+    
+    return sentence;
+}
+
