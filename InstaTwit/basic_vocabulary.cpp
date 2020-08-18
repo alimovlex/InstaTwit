@@ -69,10 +69,18 @@ string CPP_Class::basic_third()
 string CPP_Class::basic_fourth()
 {
     string sentence;
-    vector<string> personal_qualities {};
-    vector<string> thoughts {};
-    vector<string> objects {"cornucopia", "smattering", ""};
-    vector<string> actions {"to buck", "to augment", ""};
+    vector<string> personal_qualities {"genial", "egotist", "irresolute", "contemptous", "fickle",
+                                       "glib", "urbane", "benign", "sentimental", "genteel",
+                                       "surly", "empathetic", "uncompromising", "whimsical", "tawdry",
+                                       "pristine", "impeccable", "unruly", "martial"};
+    vector<string> thoughts {"impeccable", "derisive", "inadvertent", "detrimental", "perennial",
+                             "vacuous", "pertinent", "conducive", "commendable", "lucid",
+                             "facetious", "illicit"};
+    vector<string> objects {"cornucopia", "smattering", "altruism", "precedent", "jargon",
+                            "euphoria", "tumult", "credence"};
+    vector<string> actions {"to buck", "to augment", "to grovel", "to hamstring", "to assuage",
+                            "to perpetuate", "to elaborate", "to buck", "to rankle", "to spurn",
+                            "to debase", "to banish", "to assail"};
     sentence=sentence_shuffle(personal_qualities, thoughts, objects, actions);
     
     return sentence;
