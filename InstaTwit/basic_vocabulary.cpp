@@ -128,10 +128,17 @@ string CPP_Class::basic_sixth()
 string CPP_Class::basic_seventh()
 {
     string sentence;
-    vector<string> personal_qualities {};
-    vector<string> thoughts {};
-    vector<string> objects {};
-    vector<string> actions {};
+    vector<string> personal_qualities {"discreet", "miscreant", "evasive", "carping", "obliging",
+                                       "convivial", "chivalrous", "champion", "cosmopolitan", "boorish",
+                                       "sordid", "cumbersome", "inarticulate"};
+    vector<string> thoughts {"colossal", "dilapidated", "laborious", "antiquated", "malodorous",
+                             "complementary", "futile", "constraint", "paradoxical", "excruciating",
+                             "creditable", "provisional", "staid", "evasive"};
+    vector<string> objects {"abysmal", "resignation", "decimation", "qualm", "inkling",
+                            "aphorism", "perquisite"};
+    vector<string> actions {"to vie", "to hamper", "to besiege", "to enumerate", "to compound",
+                            "to morph", "to stymie", "to differentiate", "to dispatch", "to debunk",
+                            "to deliberate", "to vanquish", "to balk", "to snub", "to relegate"};
     sentence=sentence_shuffle(personal_qualities, thoughts, objects, actions);
     
     return sentence;
