@@ -55,3 +55,27 @@ string CXXClass::advanced_second()
     
     return sentence;
 }
+
+string CXXClass::advanced_third()
+{
+    string sentence;
+    vector<string> personal_qualities {"provident", "perspicacious", "plucky","punctilious","moribund",
+                       "unforthcoming", "raconteur", "redoubtable", "grandiloquent", "charlatan",
+                       "anemic", "sagacious", "portentous", "derelict", "illustrious"};
+    vector<string> thoughts {"pecuniary", "lugubrious", "approbatory", "vitriolic", "mordant",
+                             "hagiographic"};
+    vector<string> objects {"duplicity", "artlessness", "temerity", "litany", "anodyne",
+                            "sinecure", "primacy", "prolixity", "semblance", "solecism",
+                            "probity", "effrontery", "gaffe", "insouciance", "recapitulation",
+                            "prognostication", "epiphany", "umbrage"};
+    vector<string> actions {"to quail", "to hail", "to enthrall", "to flummox", "to importune",
+                            "to bowdlerize", "to maunder", "to lampoon", "to enjoin", "to cede",
+                            "to impute"};
+    vector<string> :: iterator itr;
+    vector<string> :: iterator jtr;
+    vector<string> :: iterator ktr;
+    vector<string> :: iterator ltr;
+    sentence=sentence_shuffle(personal_qualities, thoughts, objects, actions);
+    
+    return sentence;
+}
