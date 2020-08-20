@@ -134,14 +134,39 @@ string CXXClass::advanced_sixth()
     vector<string> personal_qualities {"autocratic", "tyro", "malingerer", "complaisant", "callow",
                                        "obtuse", "desiccated", "fecund", "aplomb", "hauteur",
                                        "mendicant", "solicitous", "self-effacing", "facile", "panegyric",
-                                       "doughty", "complicit", "unimpeachable"};
+                                       "doughty", "complicit", "unimpeachable", "dolorous"};
     vector<string> thoughts {"coterminous", "elegiac", "impervious", "noisome", "internecine",
                              "desideratum", "unassailable", "palatable", "ethereal", "pellucid",
-                             "discursive", "dolorous", "turgid", "inviolable"};
+                             "discursive", "turgid", "inviolable"};
     vector<string> objects {"enormity", "gumption", "bromide", "inequity", "conflagration"};
     vector<string> actions {"to transmute", "to vaunt", "to stultify", "to afford", "to conflate",
                             "to appropriate", "to pontificate", "to bridle","to impugn","to proselytize",
                             "to proscribe", "to abjure"};
+    vector<string> :: iterator itr;
+    vector<string> :: iterator jtr;
+    vector<string> :: iterator ktr;
+    vector<string> :: iterator ltr;
+    sentence=sentence_shuffle(personal_qualities, thoughts, objects, actions);
+    
+    return sentence;
+}
+
+string CXXClass::advanced_seventh()
+{
+    string sentence;
+    vector<string> personal_qualities {"trenchant", "enamored", "bereft", "halcyon", "chauvinist",
+                                       "demonstrative", "officious", "diminutive", "lachrymose", "loath",
+                                       "despot", "sardonic", "splenetic", "ebullient", "concomitant",
+                                       "officious", "infelicitous",
+    };
+    vector<string> thoughts {"exorbitant", "evanescent", "row", "ineluctable", "estimable",
+                             "veritable", "oblique"};
+    vector<string> objects {"exiguity", "modicum", "dissolution", "eponym", "panacea",
+                            "cataclysm", "raillery", "palaver", "simulacrum", "verisimilitude",
+                            "graft", "canard", "bastardization", "pillory"};
+    vector<string> actions {"to dissipate", "to surfeit", "to flag", "to hoodwink", "to dissemble",
+                            "to abrogate","to obtain","to extrapolate","to misattribute","to capitulate",
+                            "to adjudicate", "to countermand", "to promulgate"};
     vector<string> :: iterator itr;
     vector<string> :: iterator jtr;
     vector<string> :: iterator ktr;
