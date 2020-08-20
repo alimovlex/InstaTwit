@@ -157,8 +157,7 @@ string CXXClass::advanced_seventh()
     vector<string> personal_qualities {"trenchant", "enamored", "bereft", "halcyon", "chauvinist",
                                        "demonstrative", "officious", "diminutive", "lachrymose", "loath",
                                        "despot", "sardonic", "splenetic", "ebullient", "concomitant",
-                                       "officious", "infelicitous",
-    };
+                                       "officious", "infelicitous"};
     vector<string> thoughts {"exorbitant", "evanescent", "row", "ineluctable", "estimable",
                              "veritable", "oblique"};
     vector<string> objects {"exiguity", "modicum", "dissolution", "eponym", "panacea",
