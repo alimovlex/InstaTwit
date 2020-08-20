@@ -131,10 +131,17 @@ string CXXClass::advanced_fifth()
 string CXXClass::advanced_sixth()
 {
     string sentence;
-    vector<string> personal_qualities {};
-    vector<string> thoughts {};
-    vector<string> objects {};
-    vector<string> actions {};
+    vector<string> personal_qualities {"autocratic", "tyro", "malingerer", "complaisant", "callow",
+                                       "obtuse", "desiccated", "fecund", "aplomb", "hauteur",
+                                       "mendicant", "solicitous", "self-effacing", "facile", "panegyric",
+                                       "doughty", "complicit", "unimpeachable"};
+    vector<string> thoughts {"coterminous", "elegiac", "impervious", "noisome", "internecine",
+                             "desideratum", "unassailable", "palatable", "ethereal", "pellucid",
+                             "discursive", "dolorous", "turgid", "inviolable"};
+    vector<string> objects {"enormity", "gumption", "bromide", "inequity", "conflagration"};
+    vector<string> actions {"to transmute", "to vaunt", "to stultify", "to afford", "to conflate",
+                            "to appropriate", "to pontificate", "to bridle","to impugn","to proselytize",
+                            "to proscribe", "to abjure"};
     vector<string> :: iterator itr;
     vector<string> :: iterator jtr;
     vector<string> :: iterator ktr;
