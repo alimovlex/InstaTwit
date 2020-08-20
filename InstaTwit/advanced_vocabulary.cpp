@@ -79,3 +79,44 @@ string CXXClass::advanced_third()
     
     return sentence;
 }
+
+
+string CXXClass::advanced_fourth()
+{
+    string sentence;
+    vector<string> personal_qualities {"stalwart", "nonchalant", "peripatetic", "flippant", "imperious",
+                            "obstreperous", "spartan", "firebrand", "puerile", "impetuous",
+                            "unflappable", "magisterial", "crestfallen", "tempestuous", "improvident",
+                            "unviable", "inviolate", "puissant"};
+    vector<string> thoughts {"equitable", "subterfuge", "unpropitious", "rarefied", "incontrovertible",
+                             "patent", "invidious", "ribald", "apposite", "untenable",
+                             "irrefutable", "surreptitious"};
+    vector<string> objects {"asperity", "celerity", "corollary", "hubris", "denouement",
+                            "presentiment", "intimation", "dispensation", "recrimination"};
+    vector<string> actions {"to hobble", "to lacerate", "to encumber", "to machinate", "to ossify",
+                            "to dovetail", "to crystallize", "to inure", "to cosset", "to decry",
+                            "to immure"};
+    vector<string> :: iterator itr;
+    vector<string> :: iterator jtr;
+    vector<string> :: iterator ktr;
+    vector<string> :: iterator ltr;
+    sentence=sentence_shuffle(personal_qualities, thoughts, objects, actions);
+    
+    return sentence;
+}
+
+string CXXClass::advanced_fifth()
+{
+    string sentence;
+    vector<string> personal_qualities {};
+    vector<string> thoughts {};
+    vector<string> objects {};
+    vector<string> actions {};
+    vector<string> :: iterator itr;
+    vector<string> :: iterator jtr;
+    vector<string> :: iterator ktr;
+    vector<string> :: iterator ltr;
+    sentence=sentence_shuffle(personal_qualities, thoughts, objects, actions);
+    
+    return sentence;
+}
