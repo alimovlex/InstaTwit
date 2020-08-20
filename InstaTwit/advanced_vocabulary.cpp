@@ -128,3 +128,18 @@ string CXXClass::advanced_fifth()
     return sentence;
 }
 
+string CXXClass::advanced_sixth()
+{
+    string sentence;
+    vector<string> personal_qualities {};
+    vector<string> thoughts {};
+    vector<string> objects {};
+    vector<string> actions {};
+    vector<string> :: iterator itr;
+    vector<string> :: iterator jtr;
+    vector<string> :: iterator ktr;
+    vector<string> :: iterator ltr;
+    sentence=sentence_shuffle(personal_qualities, thoughts, objects, actions);
+    
+    return sentence;
+}
