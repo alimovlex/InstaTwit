@@ -92,7 +92,7 @@ string CPP_Class::basic_fifth()
     vector<string> personal_qualities {"complacent", "leery", "smug", "savvy", "obstinate",
                                        "peevish", "serene", "malevolent", "steadfast", "diligent",
                                        "placid", "impregnable"};
-    vector<string> thoughts {"impending", "pastoral", "convoluted", "unseemly", "unprecedented"
+    vector<string> thoughts {"impending", "pastoral", "convoluted", "unseemly", "unprecedented",
                              "taxing", "aphoristic", "derogative"};
     vector<string> objects {"destitute", "foible", "tact", "rash", "ploy",
                             "reservation", "presumption", "credulity", "discord", "quip",
