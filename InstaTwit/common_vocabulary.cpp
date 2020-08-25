@@ -2,8 +2,8 @@
 //  Tutorial.cpp
 //  InstaTwit
 //
-//  Created by alimovlex on 12/06/2020.
-//  Copyright © 2020 Element 84, LLC. All rights reserved.
+//  Created by alimovlex on 26/08/2020.
+//  Copyright (c) 2020 alimovlex. All rights reserved.
 //
 
 #include "common_vocabulary.hpp"

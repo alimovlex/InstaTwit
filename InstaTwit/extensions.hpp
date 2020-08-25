@@ -1,9 +1,8 @@
 //
 //  extensions.hpp
 //  InstaTwit
-//
-//  Created by robot on 14/08/2020.
-//  Copyright © 2020 Element 84, LLC. All rights reserved.
+//  Created by alimovlex on 26/08/2020.
+//  Copyright (c) 2020 alimovlex. All rights reserved.
 //
 
 #ifndef extensions_hpp

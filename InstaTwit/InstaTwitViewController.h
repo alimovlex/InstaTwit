@@ -2,8 +2,8 @@
 //  ViewController.h
 //  InstaTwit
 //
-//  Created by Aleksei Alimov on 8/8/2020.
-//  Copyright (c) 2020 LexiCOM, LLC. All rights reserved.
+//  Created by alimovlex on 26/08/2020.
+//  Copyright (c) 2020 alimovlex. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
