@@ -121,3 +121,4 @@ string CPPClass::common_sixth()
     
     return sentence;
 }
+
