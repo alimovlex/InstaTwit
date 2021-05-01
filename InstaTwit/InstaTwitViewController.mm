@@ -13,17 +13,14 @@
 #import "advanced_vocabulary.hpp"
 #import "extensions.hpp"
 
-struct CPPMembers
+struct GRE_Vocabulary
 {
-    CPPClass member1;
-    CXXClass member2;
-    CPP_Class member3;
+    CommonVocabulary member1;
+    AdvancedVocabulary member2;
+    BasicVocabulary member3;
 };
 
 @interface InstaTwitViewController ()
-
-@property (nonatomic, strong) NSArray *activities;
-@property (nonatomic, strong) NSArray *feelings;
 
 @end
 
@@ -31,63 +28,22 @@ struct CPPMembers
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /*
-    self.activities = @[@"networking", @"coding", @"tweeting", @"wireframing",
-                        @"working", @"meeting", @"pitching", @"pivoting", @"going mobile"];
-    self.feelings = @[@"awesome", @"confident", @"smart", @"agile", @"friendly",
-                      @"savvy", @"psyched", @"hopeful", @"efficient"];
-    */
+    
 }
 
 #pragma mark -
 #pragma mark Actions
-
-- (IBAction)textFieldDoneEditing:(id)sender {
-    [sender resignFirstResponder];
-}
-
 - (IBAction)tweetButtonTapped:(id)sender {
-    _cppMembers = new CPPMembers;
-    /*NSString *message = [NSString stringWithFormat:@"%@ I'm %@ and feeling %@ about it.",
-                         self.notesField.text ? self.notesField.text : @"",
-                         self.activities[[self.tweetPicker selectedRowInComponent:0]],
-                         self.feelings[[self.tweetPicker selectedRowInComponent:1]]];*/
-    NSString *msg = [NSString stringWithFormat:@"%s", _cppMembers->member1.common_first().c_str()];
+    dictionaryPtr = new GRE_Vocabulary;
+    
+    NSString *msg = [NSString stringWithFormat:@"%s", dictionaryPtr->member1.common_first().c_str()];
     
     //NSLog(@"%@", message);
-    NSLog(@"%s", msg);
+    NSLog(@"%@", msg);
    // printf("Using C++\n");
-    SLComposeViewController *composeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+    SLComposeViewController *composeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
     [composeViewController setInitialText:msg];
     [self presentViewController:composeViewController animated:YES completion:nil];
-}
-
-#pragma mark -
-#pragma mark UIPickerViewDataSource
-
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 2;
-}
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    if (component == 0) {
-        return [self.activities count];
-    }
-    else {
-        return [self.feelings count];
-    }
-}
-
-#pragma mark -
-#pragma mark UIPickerViewDelegate
-
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    if (component == 0) {
-        return self.activities[row];
-    }
-    else {
-        return self.feelings[row];
-    }
 }
 
 #pragma mark -
@@ -96,7 +52,7 @@ struct CPPMembers
 - (void)dealloc
 {
     //Free members even if ARC.
-    delete _cppMembers;
+    delete dictionaryPtr;
     
     //If not ARC uncomment the following line
     //[super dealloc];

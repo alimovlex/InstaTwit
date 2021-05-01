@@ -18,7 +18,7 @@
 #include <ctime>
 
 using namespace std;
-class CPPClass
+class CommonVocabulary
 {
 public:
     string common_first();

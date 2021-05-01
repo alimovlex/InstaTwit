@@ -19,7 +19,7 @@
 #include <ctime>
 
 using namespace std;
-class CPP_Class
+class BasicVocabulary
 {
 public:
     string basic_first();

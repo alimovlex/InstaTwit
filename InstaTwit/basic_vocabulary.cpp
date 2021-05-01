@@ -10,7 +10,7 @@
 #include "extensions.hpp"
 using namespace std;
 
-string CPP_Class::basic_first()
+string BasicVocabulary::basic_first()
 {
     string sentence;
     vector<string> personal_qualities {"insolvent", "thrifty", "spendthrift", "affluent", "indignant",
@@ -29,7 +29,7 @@ string CPP_Class::basic_first()
     return sentence;
 }
 
-string CPP_Class::basic_second()
+string BasicVocabulary::basic_second()
 {
     string sentence;
     vector<string> personal_qualities {"sanctimonious", "misanthrope", "chauvinist", "bellicose", "pugnacious", "virago", "sanguine", "cadaverous", "replete", "catalyst", "unconscionable",
@@ -46,7 +46,7 @@ string CPP_Class::basic_second()
     return sentence;
 }
 
-string CPP_Class::basic_third()
+string BasicVocabulary::basic_third()
 {
     string sentence;
     vector<string> personal_qualities {"jocular", "avid", "obdurate", "fledgling", "stolid",
@@ -66,7 +66,7 @@ string CPP_Class::basic_third()
     return sentence;
 }
 
-string CPP_Class::basic_fourth()
+string BasicVocabulary::basic_fourth()
 {
     string sentence;
     vector<string> personal_qualities {"genial", "egotist", "irresolute", "contemptous", "fickle",
@@ -86,7 +86,7 @@ string CPP_Class::basic_fourth()
     return sentence;
 }
 
-string CPP_Class::basic_fifth()
+string BasicVocabulary::basic_fifth()
 {
     string sentence;
     vector<string> personal_qualities {"complacent", "leery", "smug", "savvy", "obstinate",
@@ -106,7 +106,7 @@ string CPP_Class::basic_fifth()
     return sentence;
 }
 
-string CPP_Class::basic_sixth()
+string BasicVocabulary::basic_sixth()
 {
     string sentence;
     vector<string> personal_qualities {"docile", "eccentic", "foolhardy", "rakish", "forthright",
@@ -125,7 +125,7 @@ string CPP_Class::basic_sixth()
     return sentence;
 }
 
-string CPP_Class::basic_seventh()
+string BasicVocabulary::basic_seventh()
 {
     string sentence;
     vector<string> personal_qualities {"discreet", "miscreant", "evasive", "carping", "obliging",

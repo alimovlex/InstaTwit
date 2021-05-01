@@ -19,7 +19,7 @@
 #include <ctime>
 
 using namespace std;
-class CXXClass
+class AdvancedVocabulary
 {
 public:
     string advanced_first();

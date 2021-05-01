@@ -10,7 +10,7 @@
 #include "extensions.hpp"
 using namespace std;
 
-string CPPClass::common_first()
+string CommonVocabulary::common_first()
 {
     string sentence;
     vector<string> personal_qualities {"restive", "impertinent", "egregious", "veracious", "mercurial",
@@ -29,7 +29,7 @@ string CPPClass::common_first()
     return sentence;
 }
 
-string CPPClass::common_second()
+string CommonVocabulary::common_second()
 {
     string sentence;
     vector<string> personal_qualities {"rustic", "impudent", "apathetic", "frivolous", "reticent",
@@ -49,7 +49,7 @@ string CPPClass::common_second()
     return sentence;
 }
 
-string CPPClass::common_third()
+string CommonVocabulary::common_third()
 {
     string sentence;
     vector<string> personal_qualities {"ascetic", "avaricious", "belligerent", "disaffected", "eminent",
@@ -68,7 +68,7 @@ string CPPClass::common_third()
     return sentence;
 }
 
-string CPPClass::common_fourth()
+string CommonVocabulary::common_fourth()
 {
     string sentence;
     vector<string> personal_qualities {"Largess", "adamant", "bumbling", "exacting", "pundit",
@@ -86,7 +86,7 @@ string CPPClass::common_fourth()
     return sentence;
 }
 
-string CPPClass::common_fifth()
+string CommonVocabulary::common_fifth()
 {
     string sentence;
     vector<string> personal_qualities {"dilettante", "garrulous", "insolent", "intrepid", "inveterate",
@@ -104,7 +104,7 @@ string CPPClass::common_fifth()
     return sentence;
 }
 
-string CPPClass::common_sixth()
+string CommonVocabulary::common_sixth()
 {
     string sentence;
     vector<string> personal_qualities {"clumsy", "craven", "harried", "maladroit", "maverick",

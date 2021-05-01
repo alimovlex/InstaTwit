@@ -10,7 +10,7 @@
 #include "extensions.hpp"
 using namespace std;
 
-string CXXClass::advanced_first()
+string AdvancedVocabulary::advanced_first()
 {
     string sentence;
     vector<string> personal_qualities {"penurious", "indigent", "fractious", "sedulous", "jingoist",
@@ -33,7 +33,7 @@ string CXXClass::advanced_first()
     return sentence;
 }
 
-string CXXClass::advanced_second()
+string AdvancedVocabulary::advanced_second()
 {
     string sentence;
     vector<string> personal_qualities {"sybarite", "parvenu", "impecunious", "arriviste", "blinkered",
@@ -56,7 +56,7 @@ string CXXClass::advanced_second()
     return sentence;
 }
 
-string CXXClass::advanced_third()
+string AdvancedVocabulary::advanced_third()
 {
     string sentence;
     vector<string> personal_qualities {"provident", "perspicacious", "plucky","punctilious","moribund",
@@ -81,7 +81,7 @@ string CXXClass::advanced_third()
 }
 
 
-string CXXClass::advanced_fourth()
+string AdvancedVocabulary::advanced_fourth()
 {
     string sentence;
     vector<string> personal_qualities {"stalwart", "nonchalant", "peripatetic", "flippant", "imperious",
@@ -105,7 +105,7 @@ string CXXClass::advanced_fourth()
     return sentence;
 }
 
-string CXXClass::advanced_fifth()
+string AdvancedVocabulary::advanced_fifth()
 {
     string sentence;
     vector<string> personal_qualities {"effervescent", "unprepossessing", "besotted", "philistine", "paragon", "disingenuous", "phlegmatic", "doleful", "percipient", "unstinting", "debonair",
@@ -128,7 +128,7 @@ string CXXClass::advanced_fifth()
     return sentence;
 }
 
-string CXXClass::advanced_sixth()
+string AdvancedVocabulary::advanced_sixth()
 {
     string sentence;
     vector<string> personal_qualities {"autocratic", "tyro", "malingerer", "complaisant", "callow",
@@ -151,7 +151,7 @@ string CXXClass::advanced_sixth()
     return sentence;
 }
 
-string CXXClass::advanced_seventh()
+string AdvancedVocabulary::advanced_seventh()
 {
     string sentence;
     vector<string> personal_qualities {"trenchant", "enamored", "bereft", "halcyon", "chauvinist",
