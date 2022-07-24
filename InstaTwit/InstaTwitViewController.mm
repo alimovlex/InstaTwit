@@ -7,7 +7,6 @@
 //
 
 #import "InstaTwitViewController.h"
-#import <Social/Social.h>
 #import "common_vocabulary.hpp"
 #import "basic_vocabulary.hpp"
 #import "advanced_vocabulary.hpp"
@@ -41,9 +40,22 @@ struct GRE_Vocabulary
     //NSLog(@"%@", message);
     NSLog(@"%@", msg);
    // printf("Using C++\n");
-    SLComposeViewController *composeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-    [composeViewController setInitialText:msg];
-    [self presentViewController:composeViewController animated:YES completion:nil];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Alert" message:msg preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                            //button click event
+                        }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:cancel];
+    [alert addAction:ok];
+    
+    //SLComposeViewController *composeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+    //[composeViewController setInitialText:msg];
+    
+    
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 #pragma mark -

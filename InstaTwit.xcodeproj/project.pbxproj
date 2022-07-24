@@ -20,7 +20,6 @@
 		DA87D048170F6534007D4CE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87D023170F6534007D4CE9 /* Foundation.framework */; };
 		DA87D050170F6534007D4CE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA87D04E170F6534007D4CE9 /* InfoPlist.strings */; };
 		DA87D053170F6534007D4CE9 /* InstaTwitTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA87D052170F6534007D4CE9 /* InstaTwitTests.mm */; };
-		DA87D05D170F685F007D4CE9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA87D05C170F685F007D4CE9 /* Social.framework */; };
 		DAC56DDB180C944C00979110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC56DDA180C944C00979110 /* Images.xcassets */; };
 		E277D6BF24E061600099703B /* basic_vocabulary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E277D6BD24E061600099703B /* basic_vocabulary.cpp */; };
 		E277D6C224E061B00099703B /* advanced_vocabulary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E277D6C024E061B00099703B /* advanced_vocabulary.cpp */; };
@@ -75,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA87D05D170F685F007D4CE9 /* Social.framework in Frameworks */,
 				DA87D022170F6534007D4CE9 /* UIKit.framework in Frameworks */,
 				DA87D024170F6534007D4CE9 /* Foundation.framework in Frameworks */,
 				DA87D026170F6534007D4CE9 /* CoreGraphics.framework in Frameworks */,
@@ -227,7 +225,7 @@
 				ORGANIZATIONNAME = "Element 84, LLC";
 				TargetAttributes = {
 					DA87D01D170F6534007D4CE9 = {
-						DevelopmentTeam = 8T595WJ7W8;
+						DevelopmentTeam = 3A9CX99HJE;
 					};
 				};
 			};
@@ -447,7 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8T595WJ7W8;
+				DEVELOPMENT_TEAM = 3A9CX99HJE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaTwit/InstaTwit-Prefix.pch";
 				INFOPLIST_FILE = "InstaTwit/InstaTwit-Info.plist";
@@ -462,7 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8T595WJ7W8;
+				DEVELOPMENT_TEAM = 3A9CX99HJE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaTwit/InstaTwit-Prefix.pch";
 				INFOPLIST_FILE = "InstaTwit/InstaTwit-Info.plist";
